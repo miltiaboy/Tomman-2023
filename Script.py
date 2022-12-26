@@ -273,17 +273,17 @@ Name - {}
 """
 
     IMDB_TEMPLATE_TXT = """
-<b>🔖 ᴛɪᴛʟᴇ :<a href={url}>{title}</a>
+<b>🎥Tɪᴛʟᴇ</b> : <a href={url}>{title}</a>
+     Also Known As : {aka}
+<b>🌟Rᴀᴛɪɴɢ</b> : <a href={url}/ratings>{rating}</a> / 10
+<b>⌚️Dᴜʀᴀᴛɪᴏɴ</b> : {runtime}Min
+<b>🅰Lᴀɴɢᴜᴀɢᴇ</b> :  #{languages}
+<b>⚙Gᴇɴʀᴇ</b> : #{genres}
+<b>📀Rᴇʟᴇᴀꜱᴇ</b> : {release_date}
+<b>🌎 ᴄᴏᴜɴᴛʀʏ</b> : {countries}
+<b>📖 sᴛᴏʀʏ</b> : {plot}
 
-🎭 ɢᴇɴʀᴇs : {genres}
-🎖 ʀᴀᴛɪɴɢ : <a href={url}/ratings>{rating}</a> / 10 (ʙᴀsᴇᴅ ᴏɴ {votes} ᴜsᴇʀ ʀᴀᴛɪɴɢ.)
-
-📆 ʏᴇᴀʀ : {release_date}
-🗞 ʟᴀɴɢᴜᴀɢᴇ : {languages}
-🌎 ᴄᴏᴜɴᴛʀʏ : {countries}
-📖 sᴛᴏʀʏ : {plot} 
-
-©{message.chat.title}</b>
+<b>©{message.chat.title}</b>
 """
 
     CUSTOM_FILE_CAPTION = """<b><code>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}</code>
