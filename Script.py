@@ -280,10 +280,10 @@ Name - {}
 <b>🅰Lᴀɴɢᴜᴀɢᴇ</b> :  #{languages}
 <b>⚙Gᴇɴʀᴇ</b> : #{genres}
 <b>📀Rᴇʟᴇᴀꜱᴇ</b> : {release_date}
-<b>🌎 ᴄᴏᴜɴᴛʀʏ</b> : {countries}
-<b>📖 sᴛᴏʀʏ</b> : {plot}
+<b>🌎ᴄᴏᴜɴᴛʀʏ</b> : {countries}
+<b>📖sᴛᴏʀʏ</b> : {plot}
 
-<b>©{message.chat.title}</b>
+<b>©ᴘᴏᴡᴇʀᴇᴅ{message.chat.title}</b>
 """
 
     CUSTOM_FILE_CAPTION = """<b><code>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}</code>
