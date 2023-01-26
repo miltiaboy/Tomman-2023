@@ -1126,31 +1126,31 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"{message.from_user.mention}\n<b>[ʜᴇʀᴇ ɪꜱ ᴡʜᴀᴛ ɪ ꜰᴏᴜɴᴅ ꜰᴏʀ ʏᴏᴜʀ Qᴜᴇʀʏ] ★<u>{search}</u></b>"
     if imdb and imdb.get('poster'):
         try:
-            pic_fi=await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
+            pic_fi=await message.reply_text(text=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
             if settings["auto_delete"]:
-                await asyncio.sleep(120)
+                await asyncio.sleep(60)
                 await pic_fi.delete()
                 await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            pic_fil=await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
+            pic_fil=await message.reply_text(text=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
             if settings["auto_delete"]:
-                await asyncio.sleep(120)
+                await asyncio.sleep(60)
                 await pic_fil.delete()
                 await message.delete()
         except Exception as e:
             logger.exception(e)
-            no_pic=await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            no_pic=await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
             if settings["auto_delete"]:
-                await asyncio.sleep(120)
+                await asyncio.sleep(60)
                 await no_pic.delete()
                 await message.delete()
     else:
-        no_fil=await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+        no_fil=await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
         if settings["auto_delete"]:
-            await asyncio.sleep(120)
+            await asyncio.sleep(60)
             await no_fil.delete()
             await message.delete()
     if spoll:
@@ -1222,14 +1222,14 @@ async def advantage_spell_chok(client, msg):
 
     try:
         if settings['auto_delete']:
-            await asyncio.sleep(120)
+            await asyncio.sleep(60)
             await spell_check_del.delete()
     except KeyError:
             grpid = await active_connection(str(message.from_user.id))
             await save_group_settings(grpid, 'auto_delete', True)
             settings = await get_settings(message.chat.id)
             if settings['auto_delete']:
-                await asyncio.sleep(120)
+                await asyncio.sleep(60)
                 await spell_check_del.delete()
 
 async def manual_filters(client, message, text=False):
