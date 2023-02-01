@@ -272,12 +272,13 @@ Name - {}
 """
 
     IMDB_TEMPLATE_TXT = """
+<b>👋🏻𝐻𝒶𝒾,{message.from_user.mention}
 <b>🎥Tɪᴛʟᴇ</b> : {query}   
-<b>📆ʏᴇᴀʀ</b> : {{year}}
+<b>📆ʏᴇᴀʀ</b> : {year}
 <b>🌟Rᴀᴛɪɴɢ</b> : {rating} / 10
 <b>🅰Lᴀɴɢᴜᴀɢᴇ</b> :  #{languages}
 
-©𝐓𝐞𝐚𝐦 @{message.chat.title}
+©𝐓𝐞𝐚𝐦 <b>{message.chat.title}</b>
 """
 
     CUSTOM_FILE_CAPTION = """<b><code>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}</code>
