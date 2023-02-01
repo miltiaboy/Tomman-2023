@@ -272,9 +272,9 @@ Name - {}
 """
 
     IMDB_TEMPLATE_TXT = """
-<b>🎥Tɪᴛʟᴇ</b> : <a href={url}>{title}</a>
+<b>🎥Tɪᴛʟᴇ</b> : {query}
      Also Known As : {aka}
-<b>🌟Rᴀᴛɪɴɢ</b> : <a href={url}/ratings>{rating}</a> / 10
+<b>🌟Rᴀᴛɪɴɢ</b> : {rating} / 10
 <b>🅰Lᴀɴɢᴜᴀɢᴇ</b> :  #{languages}
 <b>🌎ᴄᴏᴜɴᴛʀʏ</b> : {countries}
 
