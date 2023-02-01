@@ -272,12 +272,12 @@ Name - {}
 """
 
     IMDB_TEMPLATE_TXT = """
-<b>🎥Tɪᴛʟᴇ</b> : {query}
-     Also Known As : {aka}
+<b>🎥Tɪᴛʟᴇ</b> : {query}   
+<b>📆ʏᴇᴀʀ</b> : {{year}}
 <b>🌟Rᴀᴛɪɴɢ</b> : {rating} / 10
 <b>🅰Lᴀɴɢᴜᴀɢᴇ</b> :  #{languages}
-<b>🌎ᴄᴏᴜɴᴛʀʏ</b> : {countries}
 
+©𝐓𝐞𝐚𝐦 @{message.chat.title}
 """
 
     CUSTOM_FILE_CAPTION = """<b><code>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}</code>
